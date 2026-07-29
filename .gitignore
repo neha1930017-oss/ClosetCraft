@@ -1,0 +1,180 @@
+# ============================================
+# PYTHON COMPILED FILES & CACHE
+# ============================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+.Python
+*.so
+
+# ============================================
+# VIRTUAL ENVIRONMENT
+# ============================================
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv.bak/
+*.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================================
+# IDE & EDITOR FILES
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+*.iml
+*.sublime-*
+.workspace
+
+# ============================================
+# JUPYTER NOTEBOOKS
+# ============================================
+.ipynb_checkpoints/
+*.ipynb
+*.nbconvert.ipynb
+
+# ============================================
+# ENVIRONMENT VARIABLES & SECRETS
+# ============================================
+.env
+.env.local
+.env.production
+.env.development
+config.py
+secrets.py
+*.key
+*.pem
+*.crt
+*.p12
+
+# ============================================
+# LOG FILES
+# ============================================
+*.log
+logs/
+*.log.*
+
+# ============================================
+# FLASK SPECIFIC
+# ============================================
+instance/
+.webassets-cache
+*.db
+*.sqlite
+*.sqlite3
+flask_session/
+migrations/
+
+# ============================================
+# MACHINE LEARNING / DATA FILES
+# ============================================
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.pb
+*.pbtxt
+*.joblib
+*.dill
+
+# ============================================
+# USER UPLOADS & TEMPORARY FILES
+# ============================================
+static/uploads/
+!static/uploads/.gitkeep
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# ============================================
+# COMPRESSED FILES (Optional - Keep if you have)
+# ============================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================
+# OS SPECIFIC
+# ============================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+# ============================================
+# TEST & COVERAGE
+# ============================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+*.cover
+
+# ============================================
+# DISTRIBUTION & BUILD
+# ============================================
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+share/python-wheels/
+MANIFEST
+
+# ============================================
+# DATABASE FILES
+# ============================================
+*.db
+*.sql
+*.sqlite
+
+# ============================================
+# PROJECT SPECIFIC (CUSTOMIZE AS NEEDED)
+# ============================================
+
+# We keep dataset_features.pkl (it's small ~927KB)
+# Uncomment below if you DON'T want it in GitHub
+# dataset_features.pkl
+
+# Dataset images - keep sample ones, ignore full dataset
+# static/images_full/    # Uncomment if you have full dataset
+
+# Model checkpoints (none in this project)
+# models/*.pth
+# models/*.pt
+
+# ============================================
+# GIT SPECIFIC
+# ============================================
+.git/
+.gitattributes
+.gitmodules
