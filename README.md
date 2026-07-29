@@ -49,3 +49,78 @@ The system then uses **Cosine Similarity** to find and recommend the most visual
 ---
 
 ## 🧠 How It Works
+┌─────────────────┐
+│ User Uploads │
+│ Clothing Image │
+└────────┬────────┘
+▼
+┌─────────────────┐
+│ ResNet50 │
+│ Feature │
+│ Extraction │
+└────────┬────────┘
+▼
+┌─────────────────┐
+│ Feature │
+│ Vector │
+│ (2048-d) │
+└────────┬────────┘
+▼
+┌─────────────────┐
+│ Cosine │
+│ Similarity │
+│ Comparison │
+└────────┬────────┘
+▼
+┌─────────────────┐
+│ Top 5 Similar │
+│ Items │
+│ Recommended │
+└─────────────────┘
+
+### Technical Workflow:
+
+1. **Feature Extraction**: Each image → ResNet50 (pretrained) → 2048-dimensional feature vector
+2. **Dataset Building**: All dataset images processed → feature vectors stored in `dataset_features.pkl`
+3. **Similarity Search**: User image → feature vector → Cosine similarity with dataset → Top matches
+4. **Recommendation**: Returns visually similar items with confidence scores
+
+---
+
+## 🛠️ Tech Stack
+
+### Machine Learning
+- **PyTorch** - Deep learning framework
+- **Torchvision** - Pre-trained models & image transformations
+- **ResNet50** - Feature extractor (Transfer Learning)
+- **Scikit-learn** - Cosine similarity computation
+- **NumPy** - Numerical operations
+
+### Backend
+- **Flask** - Web framework
+- **Werkzeug** - File handling & utilities
+
+### Frontend
+- **HTML5**
+- **CSS3**
+- **JavaScript** (basic)
+
+### Utilities
+- **OpenCV** - Image processing
+- **Pillow** - Image handling
+- **Pickle** - Feature caching
+
+---
+
+## ⚙️ Installation
+
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
+
+### Step-by-Step Setup
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/YOUR-USERNAME/closetcraft.git
+cd closetcraft
